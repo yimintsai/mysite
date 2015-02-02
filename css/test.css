@@ -1,0 +1,109 @@
+.services .services-inner {
+	margin-top: 20px;
+	-webkit-transition: all .3s ease-in, 0s;
+	-moz-transition: all .3s ease-in, 0s;
+	-o-transition: all .3s ease-in, 0s;
+	-ms-transition: all .3s ease-in, 0s;
+	transition: all .3s ease-in, 0s
+}
+.service {
+	border: 1px solid #e3e5e5;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	color: #d82c2e;
+	margin-left: -1px;
+	-webkit-transition: all .3s ease-in, 1s;
+	-moz-transition: all .3s ease-in, 1s;
+	-o-transition: all .3s ease-in, 1s;
+	-ms-transition: all .3s ease-in, 1s;
+	transition: all .3s ease-in, 1s
+}
+.service h3 {
+	color: #000;
+	-webkit-transition: all .3s ease-in, 0s;
+	-moz-transition: all .3s ease-in, 0s;
+	-o-transition: all .3s ease-in, 0s;
+	-ms-transition: all .3s ease-in, 0s;
+	transition: all .3s ease-in, 0s
+}
+.service i {
+	width: 51px;
+	height: 45px;
+	margin: 0 auto;
+	display: block;
+	background: url(../images/icons.png) no-repeat;
+	-webkit-transition: all .3s ease-in, 0s;
+	-moz-transition: all .3s ease-in, 0s;
+	-o-transition: all .3s ease-in, 0s;
+	-ms-transition: all .3s ease-in, 0s;
+	transition: all .3s ease-in, 0s
+}
+.service .heart {
+	background-position: left top
+}
+.service .bulp {
+	background-position: -51px top
+}
+.service .graph {
+	background-position: -102px top
+}
+.service .coding {
+	background-position: -152px top
+}
+.service .globe {
+	background-position: -204px top
+}
+.service .music {
+	background-position: -255px top
+}
+.service .pencil {
+	background-position: -306px top
+}
+.service .camera {
+	background-position: -357px top
+}
+.service .vcamera {
+	background-position: -408px top
+}
+.service .cloud {
+	background-position: -459px top
+}
+.service:focus, .service:hover {
+	background-color: #d82c2e;
+	border-color: #d82c2e;
+	color: #fff
+}
+.service:focus h3, .service:hover h3 {
+	color: #fff
+}
+.service:focus .heart, .service:hover .heart {
+	background-position: left bottom
+}
+.service:focus .bulp, .service:hover .bulp {
+	background-position: -51px bottom
+}
+.service:focus .graph, .service:hover .graph {
+	background-position: -103px bottom
+}
+.service:focus .coding, .service:hover .coding {
+	background-position: -152px bottom
+}
+.service:focus .globe, .service:hover .globe {
+	background-position: -204px bottom
+}
+.service:focus .music, .service:hover .music {
+	background-position: -255px bottom
+}
+.service:focus .pencil, .service:hover .pencil {
+	background-position: -306px bottom
+}
+.service:focus .camera, .service:hover .camera {
+	background-position: -357px bottom
+}
+.service:focus .vcamera, .service:hover .vcamera {
+	background-position: -408px bottom
+}
+.service:focus .cloud, .service:hover .cloud {
+	background-position: -459px bottom
+}
