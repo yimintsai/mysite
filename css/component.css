@@ -1,3 +1,9 @@
+/* Row spacer */
+.row-spacer {
+    margin-top: 40px; /* define margin as you see fit */
+}
+
+/* Timeline */
 @font-face {
 	font-family: 'ecoico';
 	src:url('../fonts/timelineicons/ecoico.eot');
@@ -86,7 +92,7 @@
 	height: 0;
 	width: 0;
 	position: absolute;
-	pointer-events: none;
+	/*pointer-events: none;*/
 	border-right-color: #3594cb;
 	border-width: 10px;
 	top: 10px;
@@ -238,7 +244,7 @@
 .circle-skill {
 	width: 150px;
 	height: 150px;
-	border-radius: 50%;
+	border-radius: 50%;	
 	display: inline-block;
 	text-align: center;
 	line-height: 10px;
@@ -254,11 +260,6 @@
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
-}
-
-/* Row spacer */
-.row-spacer {
-	margin-top: 40px; /* define margin as you see fit */
 }
 
 /* Publication */
