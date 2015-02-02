@@ -322,5 +322,14 @@
 	padding-left: 12px;
 }
 .header-active {
-	background-color: #D0D7F3;
+	background-color: #e6e6fa;
+}
+
+
+/* Owl slider*/
+#owl-demo .item img {
+    display: block;    
+    margin-left: auto;
+    width: 20%;
+    height: auto;
 }
