@@ -24,6 +24,7 @@ $(document).ready(function() {
 			if (defaultopenpanel == i) {
 				$('#cp-' + i).find('.icon-open').css('background-position', '0px -' + iconheight + 'px');
 				$('#cp-' + i).find('.expandable-panel-content').css('margin-top', 0);
+				$('#cp-' + i + ' .expandable-panel-heading').addClass('header-active');
 				$('#cp-' + i + ' .expandable-panel-heading' + ' .icon-open').addClass('icon-close');
 				//Change icon image
 			}
