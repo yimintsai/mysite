@@ -3,7 +3,7 @@ $(document).ready(function() {
 	/*-------------------- EXPANDABLE PANELS ----------------------*/
 	var panelspeed = 500;
 	//panel animate speed in milliseconds
-	var totalpanels = 2;
+	var totalpanels = 1;
 	//total number of collapsible panels
 	var defaultopenpanel = 0;
 	//leave 0 for no panel open
@@ -17,12 +17,12 @@ $(document).ready(function() {
 	//Initialise collapsible panels
 	function panelinit() {
 		for (var i = 1; i <= totalpanels; i++) {
-			panelheight[i] = parseInt($('#cp-' + i).find('.expandable-honor-panel-content').css('height'));
-			$('#cp-' + i).find('.expandable-honor-panel-content').css('margin-top', -panelheight[i]);	
+			panelheight[i] = parseInt($('#chp-' + i).find('.expandable-honor-panel-content').css('height'));
+			$('#chp-' + i).find('.expandable-honor-panel-content').css('margin-top', -panelheight[i]);	
 			
 			if (defaultopenpanel == i) {				
-				$('#cp-' + i).find('.expandable-honor-panel-content').css('margin-top', 0);
-				$('#cp-' + i + ' .expandable-honor-panel-heading').addClass('expandable-honor-panel-heading-active');
+				$('#chp-' + i).find('.expandable-honor-panel-content').css('margin-top', 0);
+				$('#chp-' + i + ' .expandable-honor-panel-heading').addClass('expandable-honor-panel-heading-active');
 				
 			}
 		}
@@ -44,7 +44,7 @@ $(document).ready(function() {
 				'margin-top' : 0
 			}, panelspeed);
 			if (highlightopen == true) {
-				$('#cp-' + currentpanel + ' .expandable-honor-panel-heading').addClass('expandable-honor-panel-heading-active');				
+				$('#chp-' + currentpanel + ' .expandable-honor-panel-heading').addClass('expandable-honor-panel-heading-active');				
 			}
 		} else {
 			obj.clearQueue();
@@ -53,7 +53,7 @@ $(document).ready(function() {
 				'margin-top' : (panelheight[objid] * -1)
 			}, panelspeed);
 			if (highlightopen == true) {
-				$('#cp-' + currentpanel + ' .expandable-honor-panel-heading').removeClass('expandable-honor-panel-heading-active');				
+				$('#chp-' + currentpanel + ' .expandable-honor-panel-heading').removeClass('expandable-honor-panel-heading-active');				
 			}
 		}
 	});
@@ -61,11 +61,11 @@ $(document).ready(function() {
 	function resetpanels() {
 		for (var i = 1; i <= totalpanels; i++) {
 			if (currentpanel != i) {				
-				$('#cp-' + i).find('.expandable-honor-panel-content').animate({
+				$('#chp-' + i).find('.expandable-honor-panel-content').animate({
 					'margin-top' : -panelheight[i]
 				}, panelspeed);
 				if (highlightopen == true) {
-					$('#cp-' + i + ' .expandable-honor-panel-heading').removeClass('expandable-honor-panel-heading-active');
+					$('#chp-' + i + ' .expandable-honor-panel-heading').removeClass('expandable-honor-panel-heading-active');
 					
 				}
 			}
