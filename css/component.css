@@ -285,9 +285,9 @@
 .expandable-panel-heading:hover {
     color: #666;
 }
-.expandable-panel-heading h2 {
+.expandable-panel-heading h3 {
     padding: 14px 10px 9px 15px;
-    font-size: 20px;
+    /*font-size: 20px;*/
     line-height: 20px;
 }
 .expandable-panel-content {
