@@ -307,23 +307,23 @@
 .expandable-panel-content p:last-child {
     padding-bottom: 15px;
 }
+.expandable-panel-content img {
+    float: right;
+    padding-left: 12px;
+}
+.expandable-panel-heading-active {
+    background-color: #e6e6fa;
+}
 .icon-open {
     width: 32px;
     height: 32px;
     position: absolute;
     background-image: url(../img/arrow-expand-down-icon.png);
     right: 15px;
-    top: 10px
+    top: 10px;
 }
 .icon-close {
     background-image: url(../img/arrow-expand-up-icon.png);
-}
-.expandable-panel-content img {
-    float: right;
-    padding-left: 12px;
-}
-.header-active {
-    background-color: #e6e6fa;
 }
 
 /* Owl slider*/

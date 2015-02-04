@@ -1,4 +1,4 @@
-.services-inner {
+.honors-inner {
 	margin-top: 20px;
 	/*-webkit-transition: all .3s ease-in, 0s;
 	-moz-transition: all .3s ease-in, 0s;
@@ -6,7 +6,7 @@
 	-ms-transition: all .3s ease-in, 0s;
 	transition: all .3s ease-in, 0s*/
 }
-.service {
+.honor {
 	border: 1px solid #e3e5e5;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -19,7 +19,7 @@
 	-ms-transition: all .3s ease-in, .5s;
 	transition: all .3s ease-in, .5s
 }
-.service h3 {
+.honor h3 {
 	color: #000;
 	-webkit-transition: all .3s ease-in, .5s;
 	-moz-transition: all .3s ease-in, .5s;
@@ -28,11 +28,11 @@
 	transition: all .3s ease-in, .5s
 }
 
-.service:focus, .service:hover {
+.honor:focus, .honor:hover {
 	background-color: #d82c2e;
 	border-color: #d82c2e;
 	color: #fff
 }
-.service:focus h3, .service:hover h3 {
+.honor:focus h3, .honor:hover h3 {
 	color: #fff
 }
