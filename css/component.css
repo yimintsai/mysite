@@ -265,20 +265,19 @@
 
 /* Publication */
 .expandable-panel {
-    width: 100%;
     position: relative;
-    min-height: 50px;
-    overflow: auto;
+    min-height: 10px;
+    overflow: auto;        
     margin-bottom: 20px;
     /*border: 1px solid #999;*/
     background-color: #ffffff;
     color: #2c3e50;
 }
 .expandable-panel-heading {
-    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
     cursor: pointer;
-    min-height: 50px;
-    clear: both;
+    min-height: 10px;    
     background-color: #E5E5E5;
     position: relative;
 }
@@ -286,10 +285,20 @@
     color: #666;
 }
 .expandable-panel-heading h3 {
-    padding: 14px 10px 9px 15px;
-    /*font-size: 20px;*/
-    line-height: 20px;
+    padding: 0px 10px 10px 15px;    
+    line-height: 20px;    
 }
+
+.expandable-panel-heading-active {
+    background-color: #e6e6fa;
+}
+
+.expandable-panel-heading i {
+    position: absolute;    
+    right: 15px;
+    top: 25px;    
+}
+
 .expandable-panel-content {
     padding: 0 15px 0 15px;
     margin-top: -999px;
@@ -311,9 +320,8 @@
     float: right;
     padding-left: 12px;
 }
-.expandable-panel-heading-active {
-    background-color: #e6e6fa;
-}
+
+/*
 .icon-open {
     width: 32px;
     height: 32px;
@@ -325,6 +333,7 @@
 .icon-close {
     background-image: url(../img/arrow-expand-up-icon.png);
 }
+*/
 
 /* Owl slider*/
 #owl-demo .item img {

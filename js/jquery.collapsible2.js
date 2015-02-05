@@ -1,4 +1,4 @@
-/* Collapisble function for Honor */
+/* Collapisble function for Publication */
 $(document).ready(function() {
 	/*-------------------- EXPANDABLE PANELS ----------------------*/
 	var panelspeed = 500;
@@ -11,19 +11,19 @@ $(document).ready(function() {
 	//set panels to behave like an accordian, with one panel only ever open at once
 
 	var panelheight = new Array();
-	var currentpanel = defaultopenpanel;	
+	var currentpanel = defaultopenpanel;
+	
 	var highlightopen = true;
 
 	//Initialise collapsible panels
 	function panelinit() {
 		for (var i = 1; i <= totalpanels; i++) {
 			panelheight[i] = parseInt($('#chp-' + i).find('.expandable-honor-panel-content').css('height'));
-			$('#chp-' + i).find('.expandable-honor-panel-content').css('margin-top', -panelheight[i]);	
+			$('#chp-' + i).find('.expandable-honor-panel-content').css('margin-top', -panelheight[i]);			
 			
 			if (defaultopenpanel == i) {				
 				$('#chp-' + i).find('.expandable-honor-panel-content').css('margin-top', 0);
 				$('#chp-' + i + ' .expandable-honor-panel-heading').addClass('expandable-honor-panel-heading-active');
-				
 			}
 		}
 	}
@@ -31,7 +31,7 @@ $(document).ready(function() {
 
 	$('.expandable-honor-panel-heading').click(function() {
 		var obj = $(this).next();
-		var objid = parseInt($(this).parent().attr('ID').substr(3, 2));
+		var objid = parseInt($(this).parent().attr('ID').substr(4, 2));
 		currentpanel = objid;
 		if (accordian == true) {
 			resetpanels();
@@ -65,8 +65,7 @@ $(document).ready(function() {
 					'margin-top' : -panelheight[i]
 				}, panelspeed);
 				if (highlightopen == true) {
-					$('#chp-' + i + ' .expandable-honor-panel-heading').removeClass('expandable-honor-panel-heading-active');
-					
+					$('#chp-' + i + ' .expandable-honor-panel-heading').removeClass('expandable-honor-panel-heading-active');					
 				}
 			}
 		}
@@ -82,4 +81,4 @@ $(document).ready(function() {
 	});
 	//END LOAD
 });
-
+//END READY

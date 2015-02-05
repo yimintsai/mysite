@@ -39,23 +39,39 @@
 }
 */
 
-
-.expandable-honor-panel {
-
+.expandable-honor-panel {    
+    position: relative;
+    min-height: 100px;
+    overflow: auto;
+    margin-bottom: 20px;
+    /*border: 1px solid #999;*/
+    background-color: #ffffff;
+    color: #2c3e50;
 }
-
-
 .expandable-honor-panel-heading {    
     border: 1px solid #e3e5e5;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
-    color: #d82c2e;    
-    margin-left: -1px;
-    position: relative;    
-    overflow: auto;
-    margin-bottom: 20px;
-    clear: both;
+    background-color:#fff;
+    color: #d82c2e;
+    margin-left: -1px;    
+    cursor: pointer;
+    min-height: 100px;      
+    position: relative;
+    -webkit-transition: all .3s ease-in, .5s;
+    -moz-transition: all .3s ease-in, .5s;
+    -o-transition: all .3s ease-in, .5s;
+    -ms-transition: all .3s ease-in, .5s;
+    transition: all .3s ease-in, .5s;    
+}
+.expandable-honor-panel-heading:hover {
+    background-color: #d82c2e;
+    border-color: #d82c2e;
+    color: #fff;
+}
+.expandable-honor-panel-heading h3 {
+    color: #000;
     -webkit-transition: all .3s ease-in, .5s;
     -moz-transition: all .3s ease-in, .5s;
     -o-transition: all .3s ease-in, .5s;
@@ -63,42 +79,9 @@
     transition: all .3s ease-in, .5s
 }
 
-
-.expandable-honor-panel h3 {
-    color: #000;
-    -webkit-transition: all .3s ease-in, .5s;
-    -moz-transition: all .3s ease-in, .5s;
-    -o-transition: all .3s ease-in, .5s;
-    -ms-transition: all .3s ease-in, .5s;
-    transition: all .3s ease-in, .5s    
+.expandable-honor-panel-heading:focus h3, .expandable-honor-panel-heading:hover h3 {
+    color: #fff
 }
-
-.expandable-honor-panel-heading:focus, .expandable-honor-panel-heading:hover{
-	background-color: #d82c2e;
-	border-color: #d82c2e;
-	color: #fff
-}
-
-/*
-.expandable-honor-panel-heading:focus, .expandable-honor-panel-heading:hover {
-    color: #d82c2e;
-}
-*/
-
-/*
-.expandable-honor-panel-heading h2 {
-    padding: 14px 10px 9px 15px;
-    font-size: 20px;
-    line-height: 20px;
-}
-*/
-
-
-.expandable-honor-panel:focus h3, .expandable-honor-panel:hover h3 {
-    color: #fff;    
-}
-
-
 .expandable-honor-panel-content {
     padding: 0 15px 0 15px;
     margin-top: -999px;
@@ -108,7 +91,7 @@
 }
 .expandable-honor-panel-content p {
     padding: 4px 0 6px 0;
-    font-size: 18px;    
+    font-size: 18px;
 }
 .expandable-honor-panel-content p:first-child {
     padding-top: 10px;
@@ -120,9 +103,6 @@
     float: right;
     padding-left: 12px;
 }
-
-/*
 .expandable-honor-panel-heading-active {
-    background-color: #d82c2e;
-}*/
-
+    background-color: #e6e6fa;
+}
