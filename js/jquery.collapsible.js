@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 	var panelheight = new Array();
 	var currentpanel = defaultopenpanel;
-	var iconheight = parseInt($('.icon-open').css('height'));
+	
 	var highlightopen = true;
 
 	//Initialise collapsible panels
@@ -20,13 +20,13 @@ $(document).ready(function() {
 		for (var i = 1; i <= totalpanels; i++) {
 			panelheight[i] = parseInt($('#cp-' + i).find('.expandable-panel-content').css('height'));
 			$('#cp-' + i).find('.expandable-panel-content').css('margin-top', -panelheight[i]);
-			$('#cp-' + i + ' .expandable-panel-heading' + ' .icon-open').removeClass('icon-close');
+			$('#cp-' + i).find('.fa').toggleClass('fa-chevron-up fa-chevron-down');
 			//Change icon image
 			if (defaultopenpanel == i) {
-				$('#cp-' + i).find('.icon-open').css('background-position', '0px -' + iconheight + 'px');
+				
 				$('#cp-' + i).find('.expandable-panel-content').css('margin-top', 0);
 				$('#cp-' + i + ' .expandable-panel-heading').addClass('expandable-panel-heading-active');
-				$('#cp-' + i + ' .expandable-panel-heading' + ' .icon-open').addClass('icon-close');
+				$('#cp-' + i).find('.fa').toggleClass('fa-chevron-down fa-chevron-up');
 				//Change icon image
 			}
 		}
@@ -43,39 +43,36 @@ $(document).ready(function() {
 
 		if (parseInt(obj.css('margin-top')) <= (panelheight[objid] * -1)) {
 			obj.clearQueue();
-			obj.stop();
-			obj.prev().find('.icon-open').css('background-position', '0px -' + iconheight + 'px');
+			obj.stop();			
 			obj.animate({
 				'margin-top' : 0
 			}, panelspeed);
 			if (highlightopen == true) {
 				$('#cp-' + currentpanel + ' .expandable-panel-heading').addClass('expandable-panel-heading-active');
-				$('#cp-' + currentpanel + ' .expandable-panel-heading' + ' .icon-open').addClass('icon-close');
+				$('#cp-' + currentpanel).find('.fa').toggleClass('fa-chevron-down fa-chevron-up');
 			}
 		} else {
 			obj.clearQueue();
-			obj.stop();
-			obj.prev().find('.icon-open').css('background-position', '0px 0px');
+			obj.stop();			
 			obj.animate({
 				'margin-top' : (panelheight[objid] * -1)
 			}, panelspeed);
 			if (highlightopen == true) {
 				$('#cp-' + currentpanel + ' .expandable-panel-heading').removeClass('expandable-panel-heading-active');
-				$('#cp-' + currentpanel + ' .expandable-panel-heading' + ' .icon-open').removeClass('icon-close');
+				$('#cp-' + currentpanel).find('.fa').toggleClass('fa-chevron-up fa-chevron-down');
 			}
 		}
 	});
 
 	function resetpanels() {
 		for (var i = 1; i <= totalpanels; i++) {
-			if (currentpanel != i) {
-				$('#cp-' + i).find('.icon-open').css('background-position', '0px 0px');
+			if (currentpanel != i) {				
 				$('#cp-' + i).find('.expandable-panel-content').animate({
 					'margin-top' : -panelheight[i]
 				}, panelspeed);
 				if (highlightopen == true) {
 					$('#cp-' + i + ' .expandable-panel-heading').removeClass('expandable-panel-heading-active');
-					$('#cp-' + i + ' .expandable-panel-heading' + ' .icon-open').removeClass('icon-close');
+					$('#cp-' + i).find('.fa').toggleClass('fa-chevron-up fa-chevron-down');
 				}
 			}
 		}
