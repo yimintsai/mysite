@@ -40,8 +40,9 @@
 */
 
 .expandable-honor-panel {    
+    width: 100%;
     position: relative;
-    min-height: 100px;
+    min-height: 50px;
     overflow: auto;
     margin-bottom: 20px;
     /*border: 1px solid #999;*/
@@ -50,12 +51,12 @@
 }
 .expandable-honor-panel-heading {    
     border: 1px solid #e3e5e5;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
     background-color:#fff;
     color: #d82c2e;
-    margin-left: -1px;    
+    /*margin-left: -1px;*/    
     cursor: pointer;
     min-height: 100px;      
     position: relative;

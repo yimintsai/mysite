@@ -3,7 +3,7 @@ $(document).ready(function() {
 	/*-------------------- EXPANDABLE PANELS ----------------------*/
 	var panelspeed = 500;
 	//panel animate speed in milliseconds
-	var totalpanels = 1;
+	var totalpanels = 2;
 	//total number of collapsible panels
 	var defaultopenpanel = 0;
 	//leave 0 for no panel open
@@ -19,7 +19,8 @@ $(document).ready(function() {
 	function panelinit() {
 		for (var i = 1; i <= totalpanels; i++) {
 			panelheight[i] = parseInt($('#chp-' + i).find('.expandable-honor-panel-content').css('height'));
-			$('#chp-' + i).find('.expandable-honor-panel-content').css('margin-top', -panelheight[i]);			
+			$('#chp-' + i).find('.expandable-honor-panel-content').css('margin-top', -panelheight[i]);	
+			$('#chp-' + i + ' .expandable-honor-panel-heading').removeClass('expandable-honor-panel-heading-active');		
 			
 			if (defaultopenpanel == i) {				
 				$('#chp-' + i).find('.expandable-honor-panel-content').css('margin-top', 0);

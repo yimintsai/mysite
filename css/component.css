@@ -210,11 +210,11 @@
     height: 35px;
     width: 0px;
     background: #484848;
-    border-radius: 0px 6px 6px 0px;
-    -moz-border-radius: 0px 6px 6px 0px;
-    -webkit-border-radius: 0px 6px 6px 0px;
-    -o-border-radius: 0px 6px 6px 0px;
-    -ms-border-radius: 0px 6px 6px 0px;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    -o-border-radius: 0px 0px 0px 0px;
+    -ms-border-radius: 0px 0px 0px 0px;
 }
 
 .skillbar-title {
@@ -296,7 +296,7 @@
 .expandable-panel-heading i {
     position: absolute;        
     right: 15px;
-    top: 24px;    
+    top: 23px;    
 }
 
 .expandable-panel-content {
@@ -322,7 +322,7 @@
 }
 
 /*
-.icon-open {
+.expandable-panel-icon-open {
     width: 32px;
     height: 32px;
     position: absolute;
@@ -330,7 +330,7 @@
     right: 15px;
     top: 10px;
 }
-.icon-close {
+.expandable-panel-icon-close {
     background-image: url(../img/arrow-expand-up-icon.png);
 }
 */

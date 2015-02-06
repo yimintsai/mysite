@@ -20,13 +20,14 @@ $(document).ready(function() {
 		for (var i = 1; i <= totalpanels; i++) {
 			panelheight[i] = parseInt($('#cp-' + i).find('.expandable-panel-content').css('height'));
 			$('#cp-' + i).find('.expandable-panel-content').css('margin-top', -panelheight[i]);
-			$('#cp-' + i).find('.fa').toggleClass('fa-chevron-up fa-chevron-down');
+			$('#cp-' + i + ' .expandable-panel-heading').removeClass('expandable-panel-heading-active');
+			$('#cp-' + i).find('.fa').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+					
 			//Change icon image
-			if (defaultopenpanel == i) {
-				
+			if (defaultopenpanel == i) {				
 				$('#cp-' + i).find('.expandable-panel-content').css('margin-top', 0);
 				$('#cp-' + i + ' .expandable-panel-heading').addClass('expandable-panel-heading-active');
-				$('#cp-' + i).find('.fa').toggleClass('fa-chevron-down fa-chevron-up');
+				$('#cp-' + i).find('.fa').removeClass('fa-chevron-down').addClass('fa-chevron-up');			
 				//Change icon image
 			}
 		}
@@ -49,7 +50,7 @@ $(document).ready(function() {
 			}, panelspeed);
 			if (highlightopen == true) {
 				$('#cp-' + currentpanel + ' .expandable-panel-heading').addClass('expandable-panel-heading-active');
-				$('#cp-' + currentpanel).find('.fa').toggleClass('fa-chevron-down fa-chevron-up');
+				$('#cp-' + currentpanel).find('.fa').removeClass('fa-chevron-down').addClass('fa-chevron-up');				
 			}
 		} else {
 			obj.clearQueue();
@@ -59,7 +60,8 @@ $(document).ready(function() {
 			}, panelspeed);
 			if (highlightopen == true) {
 				$('#cp-' + currentpanel + ' .expandable-panel-heading').removeClass('expandable-panel-heading-active');
-				$('#cp-' + currentpanel).find('.fa').toggleClass('fa-chevron-up fa-chevron-down');
+				$('#cp-' + currentpanel).find('.fa').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+				
 			}
 		}
 	});
@@ -72,7 +74,7 @@ $(document).ready(function() {
 				}, panelspeed);
 				if (highlightopen == true) {
 					$('#cp-' + i + ' .expandable-panel-heading').removeClass('expandable-panel-heading-active');
-					$('#cp-' + i).find('.fa').toggleClass('fa-chevron-up fa-chevron-down');
+					$('#cp-' + i).find('.fa').removeClass('fa-chevron-up').addClass('fa-chevron-down');					
 				}
 			}
 		}
