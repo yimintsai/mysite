@@ -266,10 +266,9 @@
 /* Publication */
 .expandable-panel {
     position: relative;
-    min-height: 10px;
+    min-height: 20px;
     overflow: auto;        
     margin-bottom: 20px;
-    /*border: 1px solid #999;*/
     background-color: #ffffff;
     color: #2c3e50;
 }
@@ -277,7 +276,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
     cursor: pointer;
-    min-height: 10px;    
+    min-height: 20px;    
     background-color: #E5E5E5;
     position: relative;
 }
