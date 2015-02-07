@@ -303,9 +303,7 @@
     padding: 10px 15px 0 15px;
     margin-top: -999px;
 }
-.expandable-panel-content ul {
-    list-style-type: none;
-}
+
 .expandable-panel-content p {
     padding: 4px 0 6px 0;
     font-size: 18px;

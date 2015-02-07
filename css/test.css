@@ -40,26 +40,25 @@
 */
 
 .expandable-honor-panel {    
-    width: 100%;
+    border: 1px solid #e3e5e5;
     position: relative;
-    min-height: 50px;
-    overflow: auto;
-    margin-bottom: 20px;
-    /*border: 1px solid #999;*/
+    min-height: 80px;
+    overflow: hidden;
+    margin-bottom: 20px;    
     background-color: #ffffff;
     color: #2c3e50;
 }
 .expandable-honor-panel-heading {    
-    border: 1px solid #e3e5e5;
+    border-bottom: 1px solid #e3e5e5;
     padding-top: 30px;
     padding-bottom: 30px;
+    cursor: pointer;
     text-align: center;
+    /*margin-left: -1px;*/       
+    min-height: 80px;      
+    position: relative;
     background-color:#fff;
     color: #d82c2e;
-    /*margin-left: -1px;*/    
-    cursor: pointer;
-    min-height: 100px;      
-    position: relative;
     -webkit-transition: all .3s ease-in, .5s;
     -moz-transition: all .3s ease-in, .5s;
     -o-transition: all .3s ease-in, .5s;
@@ -84,12 +83,12 @@
     color: #fff
 }
 .expandable-honor-panel-content {
-    padding: 0 15px 0 15px;
-    margin-top: -999px;
+    padding: 10px 15px 0 15px;
+    padding-top: 30px;
+    min-height: 420px;
+    /*margin-top: -999px;*/
 }
-.expandable-honor-panel-content ul {
-    list-style-type: none;
-}
+
 .expandable-honor-panel-content p {
     padding: 4px 0 6px 0;
     font-size: 18px;
