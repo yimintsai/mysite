@@ -12,17 +12,17 @@ $(document).ready(function() {
 
 	var panelheight = new Array();
 	var currentpanel = defaultopenpanel;
-	
+
 	var highlightopen = true;
 
 	//Initialise collapsible panels
 	function panelinit() {
 		for (var i = 1; i <= totalpanels; i++) {
 			panelheight[i] = parseInt($('#chp-' + i).find('.expandable-honor-panel-content').css('height'));
-			$('#chp-' + i).find('.expandable-honor-panel-content').css('margin-top', -panelheight[i]);	
-			$('#chp-' + i + ' .expandable-honor-panel-heading').removeClass('expandable-honor-panel-heading-active');		
-			
-			if (defaultopenpanel == i) {				
+			$('#chp-' + i).find('.expandable-honor-panel-content').css('margin-top', -panelheight[i]);
+			$('#chp-' + i + ' .expandable-honor-panel-heading').removeClass('expandable-honor-panel-heading-active');
+
+			if (defaultopenpanel == i) {
 				$('#chp-' + i).find('.expandable-honor-panel-content').css('margin-top', 0);
 				$('#chp-' + i + ' .expandable-honor-panel-heading').addClass('expandable-honor-panel-heading-active');
 			}
@@ -40,33 +40,33 @@ $(document).ready(function() {
 
 		if (parseInt(obj.css('margin-top')) <= (panelheight[objid] * -1)) {
 			obj.clearQueue();
-			obj.stop();			
+			obj.stop();
 			obj.animate({
 				'margin-top' : 0
 			}, panelspeed);
 			if (highlightopen == true) {
-				$('#chp-' + currentpanel + ' .expandable-honor-panel-heading').addClass('expandable-honor-panel-heading-active');				
+				$('#chp-' + currentpanel + ' .expandable-honor-panel-heading').addClass('expandable-honor-panel-heading-active');
 			}
 		} else {
 			obj.clearQueue();
-			obj.stop();			
+			obj.stop();
 			obj.animate({
 				'margin-top' : (panelheight[objid] * -1)
 			}, panelspeed);
 			if (highlightopen == true) {
-				$('#chp-' + currentpanel + ' .expandable-honor-panel-heading').removeClass('expandable-honor-panel-heading-active');				
+				$('#chp-' + currentpanel + ' .expandable-honor-panel-heading').removeClass('expandable-honor-panel-heading-active');
 			}
 		}
 	});
 
 	function resetpanels() {
 		for (var i = 1; i <= totalpanels; i++) {
-			if (currentpanel != i) {				
+			if (currentpanel != i) {
 				$('#chp-' + i).find('.expandable-honor-panel-content').animate({
 					'margin-top' : -panelheight[i]
 				}, panelspeed);
 				if (highlightopen == true) {
-					$('#chp-' + i + ' .expandable-honor-panel-heading').removeClass('expandable-honor-panel-heading-active');					
+					$('#chp-' + i + ' .expandable-honor-panel-heading').removeClass('expandable-honor-panel-heading-active');
 				}
 			}
 		}
