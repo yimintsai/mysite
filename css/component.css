@@ -209,7 +209,7 @@
 .skillbar-bar {
     height: 35px;
     width: 0px;
-    background: #484848;
+    background: #FF9900;
     border-radius: 0px 0px 0px 0px;
     -moz-border-radius: 0px 0px 0px 0px;
     -webkit-border-radius: 0px 0px 0px 0px;
@@ -232,11 +232,11 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    color: #FFFFFF;
+    color: #000;
     line-height: 12px !important;
     display: block;
-    font-size: 18px;
-    font-weight: normal;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .skill-panel {
@@ -247,7 +247,7 @@
     background-color: #ffffff;
 }
 .skill-panel-heading {
-    border: 1px solid #e3e5e5;
+    /*border: 1px solid #e3e5e5;*/
     padding-top: 30px;
     padding-bottom: 30px;
     /*cursor: pointer;*/
@@ -256,7 +256,7 @@
     min-height: 80px;
     position: relative;
     background-color: #fff;
-    color: #d82c2e;
+    color: #000;
     -webkit-transition: all .3s ease-in, .5s;
     -moz-transition: all .3s ease-in, .5s;
     -o-transition: all .3s ease-in, .5s;
