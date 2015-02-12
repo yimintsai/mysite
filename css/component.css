@@ -194,10 +194,10 @@
 .skillbar {
     position: relative;
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     width: 100%;
     background: #E5E5E5;
-    height: 35px;
+    height: 32px;
     border-radius: 0px;
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
@@ -207,7 +207,7 @@
 }
 
 .skillbar-bar {
-    height: 35px;
+    height: 32px;
     width: 0px;
     background: #FF9900;
     border-radius: 0px 0px 0px 0px;
@@ -217,8 +217,20 @@
     -ms-border-radius: 0px 0px 0px 0px;
 }
 
+.skillbar-note {    
+    display: block;    
+    margin-bottom: 8px;
+}
+
+
+.skillbar-note h4{
+    font-weight: bold;
+    font-size: 20px;   
+    color: #000; 
+}
+
 .skillbar-title {
-    height: 35px;
+    height: 32px;
     width: 0px;
     display: block;
     border-radius: 5px;
@@ -230,8 +242,8 @@
 
 .skillbar-title span {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 8px;
+    left: 8px;
     color: #000;
     line-height: 12px !important;
     display: block;
@@ -243,78 +255,20 @@
     position: relative;
     min-height: 80px;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     background-color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .skill-panel-heading {
     /*border: 1px solid #e3e5e5;*/
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     /*cursor: pointer;*/
     text-align: center;
     /*margin-left: -1px;*/
     min-height: 80px;
     position: relative;
-    background-color: #fff;
-    color: #000;
-    -webkit-transition: all .3s ease-in, .5s;
-    -moz-transition: all .3s ease-in, .5s;
-    -o-transition: all .3s ease-in, .5s;
-    -ms-transition: all .3s ease-in, .5s;
-    transition: all .3s ease-in, .5s;
-}
-.skill-panel-heading:hover {
-    background-color: #d82c2e;
-    border-color: #d82c2e;
-    color: #fff;
-}
-.skill-panel-heading h3 {
-    color: #000;
-    -webkit-transition: all .3s ease-in, .5s;
-    -moz-transition: all .3s ease-in, .5s;
-    -o-transition: all .3s ease-in, .5s;
-    -ms-transition: all .3s ease-in, .5s;
-    transition: all .3s ease-in, .5s
-}
-
-.skill-panel-heading:focus h3, .skill-panel-heading:hover h3 {
-    color: #fff
-}
-.skill-panel-content {
-    padding: 10px 30px 0 30px;
-    padding-top: 30px;
-    /*height: 420px;*/
-    /*margin-top: -999px;*/
-}
-
-.skill-panel-content p {
-    padding: 4px 0 6px 0;
-    font-size: 18px;
-}
-.skill-panel-content img {
-    float: right;
-    padding-left: 12px;
-}
-
-/* Honor */
-.expandable-honor-panel {
-    border: 1px solid #e3e5e5;
-    position: relative;
-    min-height: 80px;
-    overflow: hidden;
-    margin-bottom: 20px;
-    background-color: #ffffff;
-}
-.expandable-honor-panel-heading {
-    border: 1px solid #FF9900;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    /*cursor: pointer;*/
-    text-align: center;
-    /*margin-left: -1px;*/
-    min-height: 80px;
-    position: relative;
-    background-color: #FF9900;
+    background-color: #FF5722;
     color: #fff;
     -webkit-transition: all .3s ease-in, .5s;
     -moz-transition: all .3s ease-in, .5s;
@@ -323,12 +277,76 @@
     transition: all .3s ease-in, .5s;
 }
 /*
-.expandable-honor-panel-heading:hover {
+.skill-panel-heading:hover {
     background-color: #d82c2e;
     border-color: #d82c2e;
     color: #fff;
 }
 */
+.skill-panel-heading h3 {
+    color: #fff;
+    -webkit-transition: all .3s ease-in, .5s;
+    -moz-transition: all .3s ease-in, .5s;
+    -o-transition: all .3s ease-in, .5s;
+    -ms-transition: all .3s ease-in, .5s;
+    transition: all .3s ease-in, .5s
+}
+/*
+.skill-panel-heading:focus h3, .skill-panel-heading:hover h3 {
+    color: #fff
+}
+*/
+.skill-panel-content {
+    padding: 16px 32px 0 32px;
+    padding-top: 32px;
+    /*height: 420px;*/
+    /*margin-top: -999px;*/
+}
+
+.skill-panel-content p {
+    padding: 8px 0 8px 0;
+    font-size: 18px;
+}
+.skill-panel-content img {
+    float: right;
+    padding-left: 16px;
+}
+
+/* Honor */
+.expandable-honor-panel {
+    /*border: 1px solid #e3e5e5;*/
+    position: relative;
+    min-height: 80px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    /*border-radius: 2px;*/
+}
+.expandable-honor-panel-heading {
+    /*border: 1px solid #FF9800;*/
+    padding-top: 32px;
+    padding-bottom: 32px;
+    /*cursor: pointer;*/
+    text-align: center;
+    /*margin-left: -1px;*/
+    min-height: 80px;
+    position: relative;
+    background-color: #FF5722;
+    color: #fff;
+    -webkit-transition: all .3s ease-in, .5s;
+    -moz-transition: all .3s ease-in, .5s;
+    -o-transition: all .3s ease-in, .5s;
+    -ms-transition: all .3s ease-in, .5s;
+    transition: all .3s ease-in, .5s;
+}
+/*
+ .expandable-honor-panel-heading:hover {
+ background-color: #d82c2e;
+ border-color: #d82c2e;
+ color: #fff;
+ }
+ */
 .expandable-honor-panel-heading h3 {
     color: #fff;
     -webkit-transition: all .3s ease-in, .5s;
@@ -338,31 +356,31 @@
     transition: all .3s ease-in, .5s
 }
 /*
-.expandable-honor-panel-heading:focus h3, .expandable-honor-panel-heading:hover h3 {
-    color: #fff
-}
-*/
+ .expandable-honor-panel-heading:focus h3, .expandable-honor-panel-heading:hover h3 {
+ color: #fff
+ }
+ */
 
 .expandable-honor-panel-content {
-    padding: 10px 15px 0 15px;
-    padding-top: 20px;
+    padding: 8px 16px 0 16px;
+    padding-top: 24px;
     /*height: 420px;*/
     /*margin-top: -999px;*/
 }
 
 .expandable-honor-panel-content p {
-    padding: 4px 0 6px 0;
+    padding: 8px 0 8px 0;
     font-size: 18px;
 }
 .expandable-honor-panel-content p:first-child {
-    padding-top: 10px;
+    padding-top: 8px;
 }
 .expandable-honor-panel-content p:last-child {
-    padding-bottom: 15px;
+    padding-bottom: 16px;
 }
 .expandable-honor-panel-content img {
     float: right;
-    padding-left: 12px;
+    padding-left: 16px;
 }
 .expandable-honor-panel-heading-active {
     background-color: #e6e6fa;
