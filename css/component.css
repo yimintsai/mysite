@@ -217,13 +217,12 @@
     -ms-border-radius: 0px 0px 0px 0px;
 }
 
-.skillbar-note {    
-    display: block;    
+.skillbar-note {  
     margin-bottom: 8px;
 }
 
 
-.skillbar-note h4{
+.skillbar-note h4 {
     font-weight: bold;
     font-size: 20px;   
     color: #000; 
@@ -268,7 +267,7 @@
     /*margin-left: -1px;*/
     min-height: 80px;
     position: relative;
-    background-color: #FF5722;
+    background-color: #F44336;
     color: #fff;
     -webkit-transition: all .3s ease-in, .5s;
     -moz-transition: all .3s ease-in, .5s;
@@ -331,7 +330,7 @@
     /*margin-left: -1px;*/
     min-height: 80px;
     position: relative;
-    background-color: #FF5722;
+    background-color: #F44336;
     color: #fff;
     -webkit-transition: all .3s ease-in, .5s;
     -moz-transition: all .3s ease-in, .5s;
@@ -360,16 +359,13 @@
  }
  */
 .expandable-honor-panel-logo {
-    width: 128px;
-    height: 128px;
+    width: 96px;
+    height: 96px;
     color: #000;
     background-color: #F69258;        
     z-index: 1; 
     position: absolute;
-    top: 200px;
-    left: 0;
     text-align: center;
-    display: block;
     border-radius:50%;
     /*height: 420px;*/
     /*margin-top: -999px;*/
