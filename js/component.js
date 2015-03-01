@@ -5,8 +5,20 @@ $(document).ready(function() {
 		jQuery(this).appear(function() {
 			jQuery(this).find('.skillbar-bar').animate({
 				width : jQuery(this).attr('data-percent')
-			}, 1700, "easeOutCirc");
+			}, 1600, "easeOutCirc");
 		});
+	});
+});
+
+$(document).ready(function() {
+	$('.chart').easyPieChart({
+		animate : 1600,
+		lineWidth : 24,
+		barColor : '#e74c3c',
+		lineCap : 'square',
+		scaleColor : false,
+		trackColor : '#e6e8ed',
+		size : 128
 	});
 });
 
@@ -32,6 +44,22 @@ $(document).ready(function() {
 	$('.skill-panel-heading').appear(function() {
 		$('.skill-panel-logo').fadeIn(2000);
 	});
+});
+
+$(document).ready(function() {
+
+	totalpanels = 2;
+	var max_panelheight = -1;
+
+	for (var i = 1; i <= totalpanels; i++) {
+		var panelheight = parseInt($('#hp-' + i).find('.honor-panel-content').css('height'));
+		if (panelheight > max_panelheight)
+			max_panelheight = panelheight;
+	}
+
+	for (var i = 1; i <= totalpanels; i++) {
+		$('#hp-' + i).find('.honor-panel-content').css('height', max_panelheight);
+	}
 });
 
 /* JQuery Owl slider */
