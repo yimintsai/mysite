@@ -1,6 +1,6 @@
 /* Row spacer */
 .row-spacer {
-	margin-top: 40px; /* define margin as you see fit */
+	margin-top: 48px; /* define margin as you see fit */
 }
 
 /* Timeline */
@@ -194,10 +194,10 @@
 .skillbar {
 	position: relative;
 	display: block;
-	margin-bottom: 32px;
+	margin-bottom: 24px;
 	width: 100%;
 	background-color: #E0E0E0;
-	height: 32px;
+	height: 24px;
 	border-radius: 0px;
 	-moz-border-radius: 0px;
 	-webkit-border-radius: 0px;
@@ -207,7 +207,7 @@
 }
 
 .skillbar-bar {
-	height: 32px;
+	height: 24px;
 	width: 0px;
 	background-color: #FF9800;
 	border-radius: 0px 0px 0px 0px;
@@ -219,6 +219,7 @@
 
 .skillbar-note {
 	margin-bottom: 8px;
+	text-align: center;
 }
 
 .skillbar-note h4 {
@@ -227,7 +228,7 @@
 }
 
 .skillbar-title {
-	height: 32px;
+	height: 24px;
 	width: 0px;
 	display: block;
 	border-radius: 5px;
@@ -250,7 +251,7 @@
  }
  */
 
-.chart {
+.skill-chart {
 	position: relative;
 	padding: 0 16px;
 	display: block;
@@ -259,17 +260,36 @@
 	height: 128px;
 	text-align: center;
 }
-.chart canvas {
+.skill-chart canvas {
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 128px;
+	height: 128px;
+}
+
+.skill-chart2 {
+	position: relative;
+	padding: 0 16px;
+	display: block;
+	margin: 0 auto;
+	width: 128px;
+	height: 128px;
+	text-align: center;
+}
+.skill-chart2 canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 128px;
+	height: 128px;
 }
 
 .skill-panel {
 	position: relative;
 	min-height: 80px;
 	overflow: hidden;
-	margin-bottom: 24px;
+	/*margin-bottom: 24px;*/
 	background-color: #fff;
 	color: #2c3e50;
 }

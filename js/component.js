@@ -11,15 +11,49 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-	$('.chart').easyPieChart({
-		animate : 1600,
-		lineWidth : 24,
-		barColor : '#e74c3c',
-		lineCap : 'square',
-		scaleColor : false,
-		trackColor : '#e6e8ed',
-		size : 128
+
+	/*
+	 $(document).scroll(function() {
+
+	 $('.skill-chart').easyPieChart({
+	 easing : 'easeOutBounce',
+	 onStep : function(from, to, percent) {
+	 $(this.el).find('.percent').text(Math.round(percent));
+	 }
+	 });
+
+	 });
+	 */
+
+	$('.skill-chart').each(function() {
+		$(this).appear(function() {
+			$(this).easyPieChart({
+				animate : 1600,
+				lineWidth : 16,
+				barColor : '#FF9800',
+				lineCap : 'square',
+				scaleColor : false,
+				trackColor : '#e6e8ed',
+				size : 128				
+			});
+		});
 	});
+
+	$('.skill-chart2').each(function() {
+		$(this).appear(function() {
+			$(this).easyPieChart({
+				animate : 1600,
+				lineWidth : 16,
+				barColor : '#e74c3c',
+				lineCap : 'square',
+				scaleColor : false,
+				trackColor : '#e6e8ed',
+				size : 128
+
+			});
+		});
+	});
+
 });
 
 /* JQuery for honor/skill logo*/
