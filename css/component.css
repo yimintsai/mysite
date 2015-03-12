@@ -50,7 +50,7 @@
 }
 
 .cbp_tmtimeline > li .cbp_tmtime span:last-child {
-	font-size: 2.9em;
+	font-size: 1.5em;
 	color: #3594cb;
 }
 
@@ -71,14 +71,40 @@
 	border-radius: 5px;
 }
 
+
+.cbp_tmtimeline > li .cbp_tmlabel_service {
+	margin: 0 0 15px 25%;
+	background: #3594cb;
+	color: #fff;
+	padding: 2em;
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 1.4;
+	position: relative;
+	border-radius: 5px;
+}
+
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
 	background: #6cbfee;
 }
 
-.cbp_tmtimeline > li .cbp_tmlabel h2 {
+.cbp_tmtimeline > li .cbp_tmlabel h3 {
 	margin-top: 0px;
-	padding: 0 0 10px 0;
-	border-bottom: 1px solid rgba(255,255,255,0.4);
+	padding: 0 0 16px 0;
+	border-bottom: 2px solid rgba(255,255,255,0.4);
+	text-transform: none;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel h4 {
+	margin-top: 8px;
+	padding: 8px 0 8px 0;
+	text-transform: none;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel h5 {
+	margin-top: 0px;
+	text-transform: none;
+	font-weight: normal;
 }
 
 /* The triangle */
@@ -140,6 +166,7 @@
 }
 
 /* Example Media Queries */
+
 @media screen and (max-width: 65.375em) {
 
 	.cbp_tmtimeline > li .cbp_tmtime span:last-child {
@@ -189,6 +216,7 @@
 		margin: -55px 5px 0 0px;
 	}
 }
+
 
 /*Skill Bar*/
 .skillbar {
@@ -284,64 +312,6 @@
 	width: 128px;
 	height: 128px;
 }
-
-.skill-panel {
-	position: relative;
-	min-height: 80px;
-	overflow: hidden;
-	/*margin-bottom: 24px;*/
-	background-color: #fff;
-	color: #2c3e50;
-}
-.skill-panel-heading {
-	/*border: 1px solid #263238;*/
-	/*cursor: pointer;*/
-	text-align: center;
-	position: relative;
-	background-color: #fff;
-	-webkit-transition: all .3s ease-in, .5s;
-	-moz-transition: all .3s ease-in, .5s;
-	-o-transition: all .3s ease-in, .5s;
-	-ms-transition: all .3s ease-in, .5s;
-	transition: all .3s ease-in, .5s;
-}
-/*
- .skill-panel-heading:hover {
- background-color: #d82c2e;
- border-color: #d82c2e;
- color: #fff;
- }
- */
-.skill-panel-heading h3 {
-	color: #263238;
-	padding-top: 8px;
-	padding-bottom: 16px;
-	-webkit-transition: all .3s ease-in, .5s;
-	-moz-transition: all .3s ease-in, .5s;
-	-o-transition: all .3s ease-in, .5s;
-	-ms-transition: all .3s ease-in, .5s;
-	transition: all .3s ease-in, .5s
-}
-/*
- .skill-panel-heading:focus h3, .skill-panel-heading:hover h3 {
- color: #fff
- }
- */
-.skill-panel-content {
-	padding: 0px 80px 32px 80px;
-	/*height: 420px;*/
-	/*margin-top: -999px;*/
-}
-
-.skill-panel-content p {
-	padding: 8px 0 8px 0;
-	font-size: 18px;
-}
-.skill-panel-content img {
-	float: right;
-	padding-left: 16px;
-}
-
 .skill-panel-logo {
 	width: 128px;
 	height: 128px;
@@ -364,66 +334,26 @@
 }
 
 /* Honor */
-.honor-panel {
-	/*border: 1px solid #e3e5e5;*/
-	position: relative;
-	min-height: 80px;
-	overflow: hidden;
-	margin-bottom: 24px;
-	background-color: #fff;
-	color: #2c3e50;
-	/*border-radius: 2px;*/
+
+#honor {
+	width: 100%;
+	background: url(../img/happyness.jpg);
+	background-attachment: fixed;
 }
-.honor-panel-heading {
-	/*border: 1px solid #607D8B;*/
-	/*cursor: pointer;*/
-	text-align: center;
-	/*margin-left: -1px;*/
-	position: relative;
-	background-color: #fff;
-	color: #000;
-	-webkit-transition: all .3s ease-in, .5s;
-	-moz-transition: all .3s ease-in, .5s;
-	-o-transition: all .3s ease-in, .5s;
-	-ms-transition: all .3s ease-in, .5s;
-	transition: all .3s ease-in, .5s;
-}
-/*
- .expandable-honor-panel-heading:hover {
- background-color: #d82c2e;
- border-color: #d82c2e;
- color: #fff;
- }
- */
-.honor-panel-heading h3 {
-	color: #000;
-	padding-top: 8px;
-	padding-bottom: 16px;
-	-webkit-transition: all .3s ease-in, .5s;
-	-moz-transition: all .3s ease-in, .5s;
-	-o-transition: all .3s ease-in, .5s;
-	-ms-transition: all .3s ease-in, .5s;
-	transition: all .3s ease-in, .5s
-}
-/*
- .expandable-honor-panel-heading:focus h3, .expandable-honor-panel-heading:hover h3 {
- color: #fff
- }
- */
+
 .honor-panel-logo {
 	width: 128px;
 	height: 128px;
-	color: #fff;
-	background-color: #263238;
+	color: #000;
+	background-color: #fff;
 	z-index: 1;
 	position: relative;
 	text-align: center;
 	border-radius: 50%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 32px;
-	margin-bottom: 32px;
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+	margin-top: 16px;
+	margin-bottom: 16px;
 }
 .honor-panel-logo i {
 	position: relative;
@@ -502,14 +432,14 @@
 	font-size: 18px;
 }
 .expandable-panel-content p:first-child {
-	padding-top: 10px;
+	padding-top: 8px;
 }
 .expandable-panel-content p:last-child {
-	padding-bottom: 15px;
+	padding-bottom: 16px;
 }
 .expandable-panel-content img {
 	float: right;
-	padding-left: 12px;
+	padding-left: 16px;
 }
 
 /*
@@ -527,7 +457,7 @@
  */
 
 /* Owl slider*/
-#owl-demo .item img {
+#owl-demo .div {
 	display: block;
 	width: 100%;
 	height: auto;

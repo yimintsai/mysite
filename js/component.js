@@ -11,20 +11,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-
-	/*
-	 $(document).scroll(function() {
-
-	 $('.skill-chart').easyPieChart({
-	 easing : 'easeOutBounce',
-	 onStep : function(from, to, percent) {
-	 $(this.el).find('.percent').text(Math.round(percent));
-	 }
-	 });
-
-	 });
-	 */
-
+	
 	$('.skill-chart').each(function() {
 		$(this).appear(function() {
 			$(this).easyPieChart({
@@ -56,30 +43,8 @@ $(document).ready(function() {
 
 });
 
-/* JQuery for honor/skill logo*/
-$(document).ready(function() {
 
-	totalloges = 2;
-
-	$('.honor-panel-heading').appear(function() {
-		$('.honor-panel-logo').fadeIn(2000);
-
-		/*
-		 for (var x = 1; x <= totalloges; x++) {
-		 $('#hpl-' + x + ' i').fadeIn('slow');
-		 //$it.addClass(honor_logo[x-1]);
-		 //$it.fadeIn("slow");
-		 //$it.fadeOut('slow');
-		 }
-		 */
-
-	});
-
-	$('.skill-panel-heading').appear(function() {
-		$('.skill-panel-logo').fadeIn(2000);
-	});
-});
-
+/*
 $(document).ready(function() {
 
 	totalpanels = 2;
@@ -95,6 +60,7 @@ $(document).ready(function() {
 		$('#hp-' + i).find('.honor-panel-content').css('height', max_panelheight);
 	}
 });
+*/
 
 /* JQuery Owl slider */
 $(document).ready(function() {
@@ -104,7 +70,8 @@ $(document).ready(function() {
 		navigation : false, // Show next and prev buttons
 		slideSpeed : 300,
 		paginationSpeed : 400,
-		singleItem : true
+		singleItem : true,
+		autoPlay: true
 
 		// "singleItem:true" is a shortcut for:
 		// items : 1,
