@@ -3,14 +3,17 @@
 	margin-top: 48px; /* define margin as you see fit */
 }
 
+/* Header */
+#header {
+	width: 100%;
+	background: url(../img/science.jpg);
+	background-attachment: fixed;
+}
+
 /* Timeline */
-@font-face {
-	font-family: 'ecoico';
-	src: url('../fonts/timelineicons/ecoico.eot');
-	src: url('../fonts/timelineicons/ecoico.eot?#iefix') format('embedded-opentype'), url('../fonts/timelineicons/ecoico.woff') format('woff'), url('../fonts/timelineicons/ecoico.ttf') format('truetype'), url('../fonts/timelineicons/ecoico.svg#ecoico') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}/* Made with http://icomoon.io/ */
+.cbp_tmtimeline > li {
+	position: relative;
+}
 
 .cbp_tmtimeline {
 	margin: 30px 0 0 0;
@@ -71,7 +74,6 @@
 	border-radius: 5px;
 }
 
-
 .cbp_tmtimeline > li .cbp_tmlabel_service {
 	margin: 0 0 15px 25%;
 	background: #3594cb;
@@ -129,7 +131,7 @@
 .cbp_tmtimeline > li .cbp_tmicon {
 	width: 40px;
 	height: 40px;
-	font-family: 'ecoico';
+	font-family: 'FontAwesome';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -149,21 +151,18 @@
 	margin: 0 0 0 -25px;
 }
 
-.cbp_tmicon-phone:before {
-	content: "\e000";
+.cbp_tmicon-school:before {
+	content: "\f19d";
 }
 
-.cbp_tmicon-screen:before {
-	content: "\e001";
+.cbp_tmicon-company:before {
+	content: "\f0f2";
 }
 
 .cbp_tmicon-mail:before {
-	content: "\e002";
+	content: "\f140";
 }
 
-.cbp_tmicon-earth:before {
-	content: "\e003";
-}
 
 /* Example Media Queries */
 
@@ -216,7 +215,6 @@
 		margin: -55px 5px 0 0px;
 	}
 }
-
 
 /*Skill Bar*/
 .skillbar {
