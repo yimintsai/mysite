@@ -343,7 +343,7 @@
 	width: 128px;
 	height: 128px;
 	color: #000;
-	background-color: #fff;
+	background-color: #F44336;
 	z-index: 1;
 	position: relative;
 	text-align: center;
@@ -357,6 +357,7 @@
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	color: #fff;
 }
 .honor-panel-content {
 	padding: 0px 48px 32px 48px;
@@ -403,7 +404,8 @@
 	position: relative;
 }
 .expandable-panel-heading:hover {
-	color: #666;
+	color: #eee;
+	background-color: #F44336;
 }
 .expandable-panel-heading h3 {
 	padding: 0px 10px 10px 15px;
@@ -417,7 +419,7 @@
 .expandable-panel-heading i {
 	position: absolute;
 	right: 15px;
-	top: 23px;
+	top: 9px;
 }
 
 .expandable-panel-content {

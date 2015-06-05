@@ -46,7 +46,7 @@ $(document).ready(function() {
 			$(this).easyPieChart({
 				animate : 1600,
 				lineWidth : 16,
-				barColor : '#FF9800',
+				barColor : '#FF5722',
 				lineCap : 'square',
 				scaleColor : false,
 				trackColor : '#e6e8ed',
@@ -60,7 +60,7 @@ $(document).ready(function() {
 			$(this).easyPieChart({
 				animate : 1600,
 				lineWidth : 16,
-				barColor : '#e74c3c',
+				barColor : '#FF9800',
 				lineCap : 'square',
 				scaleColor : false,
 				trackColor : '#e6e8ed',
