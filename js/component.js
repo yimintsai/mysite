@@ -12,17 +12,17 @@ $(document).ready(function() {
 		});
 	});
 
-    /*
-	$('.cbp_tmicon').each(function() {
-		$(this).appear(function() {
-			$(this).effect("bounce", {
-				direction : 'down',
-				times : 1
-			}, 200);
+	/*
+	 $('.cbp_tmicon').each(function() {
+	 $(this).appear(function() {
+	 $(this).effect("bounce", {
+	 direction : 'down',
+	 times : 1
+	 }, 200);
 
-		});
-	});
-	*/
+	 });
+	 });
+	 */
 });
 
 /* jQuery for skill bars */
@@ -111,4 +111,43 @@ $(document).ready(function() {
 	});
 
 });
+
+/* Google Map */
+/*
+$(document).ready(function() {
+	$('#gmap').gmap3({
+		marker : {
+			address : "Haltern am See, Weseler Str. 151",
+			options : {
+				//icon : "img/location1.png"
+			}
+		},
+		map : {
+			options : {
+				zoom : 14,
+				scrollwheel : false
+			}
+		}
+	});
+});
+*/
+
+        function initialize() {
+            var mapOptions = {
+                center: new google.maps.LatLng(28.1823294, -82.352912),
+                zoom: 9,
+                mapTypeId: google.maps.MapTypeId.HYBRID,
+                scrollwheel: false,
+                draggable: false,
+                panControl: true,
+                zoomControl: true,
+                mapTypeControl: true,
+                scaleControl: true,
+                streetViewControl: true,
+                overviewMapControl: true,
+                rotateControl: true,
+            };
+            var map = new google.maps.Map(document.getElementById("gmap"), mapOptions);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
 
