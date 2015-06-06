@@ -29,7 +29,7 @@
 	top: 0;
 	bottom: 0;
 	width: 10px;
-	background: #afdcf8;
+	background: #E57373;
 	left: 20%;
 	margin-left: -10px;
 }
@@ -54,17 +54,17 @@
 
 .cbp_tmtimeline > li .cbp_tmtime span:last-child {
 	font-size: 1.5em;
-	color: #3594cb;
+	color: #C62828;
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
-	color: #6cbfee;
+	color: #F44336;
 }
 
 /* Right content */
 .cbp_tmtimeline > li .cbp_tmlabel {
 	margin: 0 0 45px 25%;
-	background: #3594cb;
+	background: #C62828;
 	color: #fff;
 	padding: 2em;
 	font-size: 1.2em;
@@ -77,7 +77,7 @@
 /*
 .cbp_tmtimeline > li .cbp_tmlabel_service {
 	margin: 0 0 15px 25%;
-	background: #3594cb;
+	background: #C62828;
 	color: #fff;
 	padding: 2em;
 	font-size: 1.2em;
@@ -89,7 +89,7 @@
 */
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
-	background: #6cbfee;
+	background: #F44336;
 }
 
 .cbp_tmtimeline > li .cbp_tmlabel h3 {
@@ -120,13 +120,13 @@
 	width: 0;
 	position: absolute;
 	/*pointer-events: none;*/
-	border-right-color: #3594cb;
+	border-right-color: #C62828;
 	border-width: 10px;
 	top: 10px;
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
-	border-right-color: #6cbfee;
+	border-right-color: #F44336;
 }
 
 /* The icons */
@@ -144,9 +144,9 @@
 	-webkit-font-smoothing: antialiased;
 	position: absolute;
 	color: #fff;
-	background: #46a4da;
+	background: #E57373;
 	border-radius: 50%;
-	box-shadow: 0 0 0 8px #afdcf8;
+	box-shadow: 0 0 0 8px #E57373;
 	text-align: center;
 	left: 20%;
 	top: 0;
@@ -155,10 +155,12 @@
 
 .cbp_tmicon-school:before {
 	content: "\f19d";
+	font-size: 1.4em;
 }
 
 .cbp_tmicon-company:before {
 	content: "\f0f2";
+	font-size: 1.4em;
 }
 
 .cbp_tmicon-mail:before {
@@ -200,13 +202,13 @@
 		right: auto;
 		left: 20px;
 		border-right-color: transparent;
-		border-bottom-color: #3594cb;
+		border-bottom-color: #C62828;
 		top: -20px;
 	}
 
 	.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
 		border-right-color: transparent;
-		border-bottom-color: #6cbfee;
+		border-bottom-color: #F44336;
 	}
 
 	.cbp_tmtimeline > li .cbp_tmicon {
