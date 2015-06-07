@@ -24,10 +24,10 @@ $(function() {
 				url : "//formspree.io/yimintsai@gmail.com",
 				type : "POST",
 				data : {
-					//name : name,
-					//phone : phone,
-					//email : email,
-					message : "Hello!"
+					name : name,
+					phone : phone,
+					email : email,
+					message : message
 				},
 				dataType : "json",
 				cache : false,
