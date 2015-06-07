@@ -19,7 +19,7 @@ $(function() {
 			if (firstName.indexOf(' ') >= 0) {
 				firstName = name.split(' ').slice(0, -1).join(' ');
 			}
-			var formData = $(form).serialize();
+			var formData = $('#contactForm').serialize();
 			$.ajax({
 				//url: "././mail/contact_me.php",
 				url : "//formspree.io/yimintsai@gmail.com",
