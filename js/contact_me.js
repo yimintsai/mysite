@@ -19,16 +19,20 @@ $(function() {
 			if (firstName.indexOf(' ') >= 0) {
 				firstName = name.split(' ').slice(0, -1).join(' ');
 			}
+			var formData = $(form).serialize();
 			$.ajax({
 				//url: "././mail/contact_me.php",
 				url : "//formspree.io/yimintsai@gmail.com",
 				method : "POST",
+				data : formData,
+				/*
 				data : {
 					name : name,
 					phone : phone,
 					email : email,
 					message : message
 				},
+				*/
 				dataType : "json",
 				cache : false,
 				success : function() {
