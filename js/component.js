@@ -147,7 +147,7 @@ $(document).ready(function() {
 		map : {
 			options : {
 				zoom : 13,
-				scrollwheel : true
+				scrollwheel : false
 			}
 		}
 	});
