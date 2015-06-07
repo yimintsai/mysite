@@ -12,6 +12,7 @@ $(function() {
 			var name = $("input#name").val();
 			var email = $("input#email").val();
 			var phone = $("input#phone").val();
+            var subject = $("input#subject").val();
 			var message = $("textarea#message").val();
 			var firstName = name;
 			// For Success/Failure Message
@@ -19,20 +20,19 @@ $(function() {
 			if (firstName.indexOf(' ') >= 0) {
 				firstName = name.split(' ').slice(0, -1).join(' ');
 			}
-			var formData = $('#contactForm').serialize();
+			//var formData = $('#contactForm').serialize();
 			$.ajax({
 				//url: "././mail/contact_me.php",
 				url : "//formspree.io/yimintsai@gmail.com",
 				method : "POST",
-				data : formData,
-				/*
+				//data : formData,				
 				data : {
 					name : name,
 					phone : phone,
 					email : email,
+                    subject : subject,
 					message : message
-				},
-				*/
+				},				
 				dataType : "json",
 				cache : false,
 				success : function() {
