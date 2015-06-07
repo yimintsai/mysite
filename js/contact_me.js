@@ -18,8 +18,8 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-            	//url: "http://video.ee.ntu.edu.tw/~firstpeople/mail/contact_me.php",
-                url: "././mail/contact_me.php",
+            	url: "http://video.ee.ntu.edu.tw/~firstpeople/mail/contact_me.php",
+                //url: "././mail/contact_me.php",
                 type: "POST",
                 data: {
                     name: name,
