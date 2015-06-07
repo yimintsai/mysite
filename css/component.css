@@ -54,11 +54,12 @@
 
 .cbp_tmtimeline > li .cbp_tmtime span:last-child {
 	font-size: 1.5em;
-	color: #C62828;
+	font-weight: bold;
+	color: #2c3e50;
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
-	color: #F44336;
+	color: #2c3e50;
 }
 
 /* Right content */
@@ -420,7 +421,7 @@
 
 .expandable-panel-heading i {
 	position: absolute;
-	right: 15px;
+	right: 16px;
 	top: 9px;
 }
 
@@ -470,5 +471,5 @@
 	width: 100%;
 	height: 400px;
 	margin-top: 64px;
-	border: 2px solid #eee;
+	//border: 2px solid #eee;
 }

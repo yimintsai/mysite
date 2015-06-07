@@ -89,12 +89,6 @@ $(document).ready(function() {
  }
  });
  */
-/* Google Map */
-$(document).ready(function() {
-	
-	$(".gmap3").gmap3();
-});
-
 
 /* JQuery Owl slider */
 $(document).ready(function() {
@@ -118,8 +112,6 @@ $(document).ready(function() {
 
 });
 
-
-
 /*
  function initialize() {
  var mapOptions = {
@@ -141,3 +133,22 @@ $(document).ready(function() {
  google.maps.event.addDomListener(window, 'load', initialize);
 
  */
+
+/* Google Map */
+$(document).ready(function() {
+
+	$('#gmap').gmap3({
+		marker : {
+			latLng : [25.014397, 121.530668],
+			options : {
+				icon : new google.maps.MarkerImage("img/location.png", new google.maps.Size(49, 65, "px", "px"))
+			}
+		},
+		map : {
+			options : {
+				zoom : 13,
+				scrollwheel : true
+			}
+		}
+	});
+}); 
