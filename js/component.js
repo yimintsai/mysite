@@ -129,4 +129,12 @@ $(document).ready(function() {
 			}
 		}
 	});
-}); 
+});
+
+/* FitVid */
+
+$(document).ready(function() {
+	// Target your .container, .wrapper, .post, etc.
+	$(".modal-body").fitVids();
+});
+

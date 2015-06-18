@@ -6,8 +6,18 @@
 /* Header */
 #header {
 	width: 100%;
-	background: url(../img/science.jpg);
+	background: url(../img/bg3.jpg);
 	background-attachment: fixed;
+}
+
+.parallax-overlay {
+	/*
+	 background-color: rgba(246, 238, 49, 0.9);
+	 background-color: rgba(0, 0, 0, 0.9);
+	 */
+
+	background: repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+	height: 100%;
 }
 
 /* Timeline */
@@ -472,4 +482,9 @@
 	height: 400px;
 	margin-top: 64px;//
 	border: 2px solid #eee;
+}
+
+/* iframe */
+iframe, embed, object {
+	max-width: 100%;
 }
