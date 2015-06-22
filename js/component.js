@@ -87,10 +87,8 @@ $(document).ready(function() {
 		var isopened = currentObj.hasClass('collapse-close');		
 
 		if (isopened) {
-			currentObj.removeClass('collapsible-active');
 			currentObj.find('.fa').removeClass('fa-caret-up').addClass('fa-caret-down');
 		} else {
-			currentObj.addClass('collapsible-active');
 			currentObj.find('.fa').removeClass('fa-caret-down').addClass('fa-caret-up');
 		}
 	});
