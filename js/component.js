@@ -77,6 +77,8 @@ $(document).ready(function() {
 	$('.collapsible').collapsible({
 		defaultOpen : 'colpanel-1'
 	});
+	
+	//init
 
 	$('.collapsible').click(function() {
 		//var obj = $(this).next();

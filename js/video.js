@@ -8,27 +8,38 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 // 3. This function creates an <iframe> (and YouTube player)
 //    after the API code downloads.
-var player;
+var player2, player3;
 function onYouTubeIframeAPIReady() {
-	player = new YT.Player('player', {
+	player2 = new YT.Player('player2', {
 		height : '390',
 		width : '640',
-		videoId : '0nX_DvCOcio',
+		//videoId : 'VvnkQFLZBMc',
 		playerVars : {
 			'autoplay' : 0,
-			'controls' : 1
+			'controls' : 1,
+			'listType' : 'playlist',
+			'list' : 'PLzmofmCZCSzwuO2xsLFBq6SGgfCdrupcP'
 		},
 		events : {
 			//'onReady' : onPlayerReady
 			//'onStateChange' : onPlayerStateChange
 		}
 	});
+	
+	player3 = new YT.Player('player3', {
+		height : '390',
+		width : '640',
+		playerVars : {
+			'listType' : 'playlist',
+			'list' : 'PLzmofmCZCSzy_eJwW8Zs480ugjFjQ1okP'
+		}
+	});	
 }
 
 // 4. The API will call this function when the video player is ready.
-function onPlayerReady(event) {
-	event.target.playVideo();
-}
+//function onPlayerReady(event) {
+//	event.target.playVideo();
+//}
 
 // 5. The API calls this function when the player's state changes.
 //    The function indicates that when playing a video (state=1),
@@ -52,8 +63,7 @@ function pauseVideo(pl) {
 
 $(document).ready(function() {
 	$('.close-modal').click(function() {
-		pauseVideo(player);
-		
+		pauseVideo(player2);
+		pauseVideo(player3);		
 	});
-
 });

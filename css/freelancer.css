@@ -451,3 +451,10 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
+.portfolio-modal .modal-body p {
+	margin-top: 32px;
+	margin-bottom: 32px;
+	word-wrap: break-word;
+	text-align: justify;
+}
