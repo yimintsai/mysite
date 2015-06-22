@@ -72,23 +72,29 @@ $(document).ready(function() {
 
 });
 
-/*
- $(document).ready(function() {
+$(document).ready(function() {
+	//collapsible management
+	$('.collapsible').collapsible({
+		defaultOpen : 'colpanel-1'
+	});
 
- totalpanels = 2;
- var max_panelheight = -1;
+	$('.collapsible').click(function() {
+		//var obj = $(this).next();
+		var objid = parseInt($(this).attr('ID').substr(9, 2));
 
- for (var i = 1; i <= totalpanels; i++) {
- var panelheight = parseInt($('#hp-' + i).find('.honor-panel-content').css('height'));
- if (panelheight > max_panelheight)
- max_panelheight = panelheight;
- }
+		var currentObj = $('#colpanel-' + objid);
+		
+		var isopened = currentObj.hasClass('collapse-close');		
 
- for (var i = 1; i <= totalpanels; i++) {
- $('#hp-' + i).find('.honor-panel-content').css('height', max_panelheight);
- }
- });
- */
+		if (isopened) {
+			currentObj.removeClass('collapsible-active');
+			currentObj.find('.fa').removeClass('fa-caret-up').addClass('fa-caret-down');
+		} else {
+			currentObj.addClass('collapsible-active');
+			currentObj.find('.fa').removeClass('fa-caret-down').addClass('fa-caret-up');
+		}
+	});
+});
 
 /* JQuery Owl slider */
 $(document).ready(function() {
