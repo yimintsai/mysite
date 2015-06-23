@@ -77,16 +77,34 @@ $(document).ready(function() {
 	$('.collapsible').collapsible({
 		defaultOpen : 'colpanel-1'
 	});
-	
+
+	var totalpanels = 3;
+	//total number of collapsible panels
+
 	//init
+	function panelinit() {
+		for (var i = 1; i <= totalpanels; i++) {
+
+			var currentObj = $('#colpanel-' + i);
+
+			var isopened = currentObj.hasClass('collapse-open');			
+
+			if (isopened)
+				currentObj.find('.fa').removeClass('fa-caret-down').addClass('fa-caret-up');
+
+		}
+	}
+	
+	panelinit();
+
 
 	$('.collapsible').click(function() {
 		//var obj = $(this).next();
 		var objid = parseInt($(this).attr('ID').substr(9, 2));
 
 		var currentObj = $('#colpanel-' + objid);
-		
-		var isopened = currentObj.hasClass('collapse-close');		
+
+		var isopened = currentObj.hasClass('collapse-close');
 
 		if (isopened) {
 			currentObj.find('.fa').removeClass('fa-caret-up').addClass('fa-caret-down');
