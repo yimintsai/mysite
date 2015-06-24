@@ -236,6 +236,7 @@
 }
 
 /*Skill Bar*/
+/*
 .skillbar {
 	position: relative;
 	display: block;
@@ -282,6 +283,8 @@
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 }
+
+*/
 
 /*
  .skillbar-title span {
@@ -499,11 +502,22 @@
 	color: #2c3e50;
 }
 
+/* Portfolio/Project */
+.project-chip-content {
+    
+    
+}
+
 /* Owl slider*/
 #owl-demo .div {
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+#chip-gallery .div {
+    
+    
 }
 
 /* Map */

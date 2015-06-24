@@ -65,7 +65,7 @@ function pauseVideo(pl) {
 
 $(document).ready(function() {
 	$('.close-modal').click(function() {
-		var playerid = $(this).parent().find('iframe').attr('id');
+		var playerid = $(this).next().find('iframe').attr('id');
 		pauseVideo(players[playerid]);
 	});
 });

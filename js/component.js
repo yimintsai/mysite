@@ -86,22 +86,19 @@ $(document).ready(function() {
 		for (var i = 1; i <= totalpanels; i++) {
 
 			var currentObj = $('#colpanel-' + i);
-
-			var isopened = currentObj.hasClass('collapse-open');			
+			var isopened = currentObj.hasClass('collapse-open');
 
 			if (isopened)
 				currentObj.find('.fa').removeClass('fa-caret-down').addClass('fa-caret-up');
 
 		}
 	}
-	
-	panelinit();
 
+	panelinit();
 
 	$('.collapsible').click(function() {
 		//var obj = $(this).next();
 		var objid = parseInt($(this).attr('ID').substr(9, 2));
-
 		var currentObj = $('#colpanel-' + objid);
 
 		var isopened = currentObj.hasClass('collapse-close');
@@ -124,6 +121,25 @@ $(document).ready(function() {
 		paginationSpeed : 400,
 		singleItem : true,
 		autoPlay : true
+
+		// "singleItem:true" is a shortcut for:
+		// items : 1,
+		// itemsDesktop : false,
+		// itemsDesktopSmall : false,
+		// itemsTablet: false,
+		// itemsMobile : false
+
+	});
+
+	$("#chip-gallery").owlCarousel({
+
+		navigation : false, // Show next and prev buttons
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		singleItem : true,
+		autoPlay : false,
+		navigation : true,
+		navigationText : ["<",">"],
 
 		// "singleItem:true" is a shortcut for:
 		// items : 1,
