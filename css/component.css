@@ -263,15 +263,6 @@
 	-ms-border-radius: 0px 0px 0px 0px;
 }
 
-.skillbar-note {
-	margin-bottom: 8px;
-	text-align: center;
-}
-
-.skillbar-note h4 {
-	font-weight: bold;
-	font-size: 20px;
-}
 
 .skillbar-title {
 	height: 24px;
@@ -283,8 +274,18 @@
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 }
-
 */
+
+.skillbar-note {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.skillbar-note h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 
 /*
  .skillbar-title span {

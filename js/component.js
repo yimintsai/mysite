@@ -85,11 +85,11 @@ $(document).ready(function() {
 	function panelinit() {
 		for (var i = 1; i <= totalpanels; i++) {
 
-			var currentObj = $('#colpanel-' + i);
-			var isopened = currentObj.hasClass('collapse-open');
+			var $currentObj = $('#colpanel-' + i);
+			var isopened = $currentObj.hasClass('collapse-open');
 
 			if (isopened)
-				currentObj.find('.fa').removeClass('fa-caret-down').addClass('fa-caret-up');
+				$currentObj.find('.fa').removeClass('fa-caret-down').addClass('fa-caret-up');
 
 		}
 	}
@@ -99,14 +99,14 @@ $(document).ready(function() {
 	$('.collapsible').click(function() {
 		//var obj = $(this).next();
 		var objid = parseInt($(this).attr('ID').substr(9, 2));
-		var currentObj = $('#colpanel-' + objid);
+		var $currentObj = $('#colpanel-' + objid);
 
-		var isopened = currentObj.hasClass('collapse-close');
+		var isopened = $currentObj.hasClass('collapse-close');
 
 		if (isopened) {
-			currentObj.find('.fa').removeClass('fa-caret-up').addClass('fa-caret-down');
+			$currentObj.find('.fa').removeClass('fa-caret-up').addClass('fa-caret-down');
 		} else {
-			currentObj.find('.fa').removeClass('fa-caret-down').addClass('fa-caret-up');
+			$currentObj.find('.fa').removeClass('fa-caret-down').addClass('fa-caret-up');
 		}
 	});
 });
@@ -131,6 +131,25 @@ $(document).ready(function() {
 
 	});
 
+	$("#aisp-gallery").owlCarousel({
+
+		navigation : false, // Show next and prev buttons
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		singleItem : true,
+		autoPlay : false,
+		navigation : true,
+		navigationText : ["<",">"],
+
+		// "singleItem:true" is a shortcut for:
+		// items : 1,
+		// itemsDesktop : false,
+		// itemsDesktopSmall : false,
+		// itemsTablet: false,
+		// itemsMobile : false
+
+	});
+	
 	$("#chip-gallery").owlCarousel({
 
 		navigation : false, // Show next and prev buttons

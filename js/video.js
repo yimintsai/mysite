@@ -11,8 +11,8 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var players={};
 function onYouTubeIframeAPIReady() {
 	players['player2'] = new YT.Player('player2', {
-		height : '390',
-		width : '640',
+		height : '440',
+		width : '720',
 		//videoId : 'VvnkQFLZBMc',
 		playerVars : {
 			'autoplay' : 0,
@@ -28,8 +28,8 @@ function onYouTubeIframeAPIReady() {
 	});
 
 	players['player3'] = new YT.Player('player3', {
-		height : '390',
-		width : '640',
+		height : '440',
+		width : '720',
 		playerVars : {
 			'enablejsapi' : 1,
 			'listType' : 'playlist',
