@@ -139,7 +139,7 @@ $(document).ready(function() {
 		singleItem : true,
 		autoPlay : false,
 		navigation : true,
-		navigationText : ["<",">"],
+		navigationText : ["<", ">"],
 
 		// "singleItem:true" is a shortcut for:
 		// items : 1,
@@ -149,7 +149,7 @@ $(document).ready(function() {
 		// itemsMobile : false
 
 	});
-	
+
 	$("#chip-gallery").owlCarousel({
 
 		navigation : false, // Show next and prev buttons
@@ -158,7 +158,7 @@ $(document).ready(function() {
 		singleItem : true,
 		autoPlay : false,
 		navigation : true,
-		navigationText : ["<",">"],
+		navigationText : ["<", ">"],
 
 		// "singleItem:true" is a shortcut for:
 		// items : 1,
