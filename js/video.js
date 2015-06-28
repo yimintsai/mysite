@@ -27,6 +27,16 @@ function onYouTubeIframeAPIReady() {
 		}
 	});
 
+	players['player1'] = new YT.Player('player1', {
+		height : '440',
+		width : '720',
+		playerVars : {
+			'enablejsapi' : 1,
+			'listType' : 'playlist',
+			'list' : 'PLzmofmCZCSzwsc7avZDk4rkR0ctIjn06C'
+		}
+	});
+
 	players['player3'] = new YT.Player('player3', {
 		height : '440',
 		width : '720',
