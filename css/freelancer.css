@@ -118,16 +118,17 @@ header .intro-text {
 
 @media (min-width: 768px) {
 	.navbar-fixed-top {
-		padding: 20px 0;
-		/*
 		-webkit-transition: padding .3s;
 		-moz-transition: padding .3s;
 		transition: padding .3s;
-		*/
+		border-bottom: 1px solid rgba(255,255,255,.3);	
+		
+		/*
 		background: 0 0;
 		-webkit-transition: background .3s ease-in-out, padding .3s ease-in-out;
 		-moz-transition: background .3s ease-in-out, padding .3s ease-in-out;
 		transition: background .3s ease-in-out, padding .3s ease-in-out;
+		*/
 		
 	}
 
@@ -168,7 +169,7 @@ header .intro-text {
 }
 
 .navbar-default, .navbar-inverse {
-	border: 0;
+	/*border: 0;*/
 }
 
 section {
