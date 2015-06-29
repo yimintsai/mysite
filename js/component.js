@@ -131,6 +131,25 @@ $(document).ready(function() {
 
 	});
 
+	$("#vs-gallery").owlCarousel({
+
+		navigation : false, // Show next and prev buttons
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		singleItem : true,
+		autoPlay : false,
+		navigation : true,
+		navigationText : ["<", ">"],
+
+		// "singleItem:true" is a shortcut for:
+		// items : 1,
+		// itemsDesktop : false,
+		// itemsDesktopSmall : false,
+		// itemsTablet: false,
+		// itemsMobile : false
+
+	});
+
 	$("#aisp-gallery").owlCarousel({
 
 		navigation : false, // Show next and prev buttons
