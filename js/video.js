@@ -10,6 +10,16 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 //    after the API code downloads.
 var players = {};
 function onYouTubeIframeAPIReady() {
+	players['player1'] = new YT.Player('player1', {
+		height : '440',
+		width : '720',
+		playerVars : {
+			'enablejsapi' : 1,
+			'listType' : 'playlist',
+			'list' : 'PLzmofmCZCSzwsc7avZDk4rkR0ctIjn06C'
+		}
+	});
+	
 	players['player2'] = new YT.Player('player2', {
 		height : '440',
 		width : '720',
@@ -25,17 +35,7 @@ function onYouTubeIframeAPIReady() {
 			//'onReady' : onPlayerReady
 			//'onStateChange' : onPlayerStateChange
 		}
-	});
-
-	players['player1'] = new YT.Player('player1', {
-		height : '440',
-		width : '720',
-		playerVars : {
-			'enablejsapi' : 1,
-			'listType' : 'playlist',
-			'list' : 'PLzmofmCZCSzwsc7avZDk4rkR0ctIjn06C'
-		}
-	});
+	});	
 
 	players['player3'] = new YT.Player('player3', {
 		height : '440',
@@ -46,6 +46,16 @@ function onYouTubeIframeAPIReady() {
 			'list' : 'PLzmofmCZCSzy_eJwW8Zs480ugjFjQ1okP'
 		}
 	});
+	
+	players['player4'] = new YT.Player('player4', {
+		height : '440',
+		width : '720',
+		playerVars : {
+			'enablejsapi' : 1,
+			'listType' : 'playlist',
+			'list' : 'PLzmofmCZCSzyMRUcFFSb5jpsltVPlwx72'
+		}
+	});	
 }
 
 // 4. The API will call this function when the video player is ready.
