@@ -42,7 +42,7 @@
     width: 100%;
     background: url(../img/bg3.jpg);
     background-attachment: fixed;
-    background-size: 100% auto;
+    background-size: cover;
 }
 
 .parallax-overlay {
@@ -391,7 +391,8 @@
     width: 100%;
     background: url(../img/happyness.jpg);
     background-attachment: fixed;
-    background-size: 100% auto;
+    /*background-size: 100% auto;*/
+   background-size: cover;
 }
 
 .honor-panel-logo {
