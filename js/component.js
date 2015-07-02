@@ -210,9 +210,22 @@ $(document).ready(function() {
 });
 
 /* FitVid */
-
 $(document).ready(function() {
 	// Target your .container, .wrapper, .post, etc.
 	$(".modal-body").fitVids();
+});
+
+/* Handle page btn */
+$(document).ready(function() {
+
+	$('.portfolio-link').click(function() {
+		$('#page-btn').hide();		
+	});
+	
+
+	$('.close-modal').click(function() {
+		$('#page-btn').show();		
+	});
+
 });
 
