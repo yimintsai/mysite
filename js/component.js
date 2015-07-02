@@ -219,13 +219,20 @@ $(document).ready(function() {
 $(document).ready(function() {
 
 	$('.portfolio-link').click(function() {
-		$('#page-btn').hide();		
+		$('#page-btn').hide();
 	});
-	
 
 	$('.close-modal').click(function() {
-		$('#page-btn').show();		
+		$('#page-btn').show();
 	});
 
 });
+
+/*
+ $(document).keyup(function(e) {
+ if (e.keyCode == 27) {
+ $('.portfolio-modal').hide();
+ }
+ })
+ ;*/
 
