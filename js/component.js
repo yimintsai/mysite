@@ -228,3 +228,12 @@ $(document).ready(function() {
 
 });
 
+/* Isotope */
+
+$(document).ready(function() {
+	$('.grid').isotope({
+		// options...
+		itemSelector : '.portfolio-item'		
+	});
+
+});
