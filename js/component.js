@@ -218,21 +218,13 @@ $(document).ready(function() {
 /* Handle page btn */
 $(document).ready(function() {
 
-	$('.portfolio-link').click(function() {
+	$('.portfolio-modal').on('show.bs.modal', function(e) {
 		$('#page-btn').hide();
 	});
 
-	$('.close-modal').click(function() {
+	$('.portfolio-modal').on('hidden.bs.modal', function(e) {
 		$('#page-btn').show();
 	});
 
 });
-
-/*
- $(document).keyup(function(e) {
- if (e.keyCode == 27) {
- $('.portfolio-modal').hide();
- }
- })
- ;*/
 
