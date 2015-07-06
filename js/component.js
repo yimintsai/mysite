@@ -233,7 +233,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$('.grid').isotope({
 		// options...
-		itemSelector : '.portfolio-item'		
+		itemSelector : '.portfolio-item'
 	});
 
 });
