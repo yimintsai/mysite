@@ -220,10 +220,12 @@ $(document).ready(function() {
 
 	$('.portfolio-modal').on('show.bs.modal', function(e) {
 		$('#page-btn').hide();
+        $('#download-btn').hide();
 	});
 
 	$('.portfolio-modal').on('hidden.bs.modal', function(e) {
 		$('#page-btn').show();
+        $('#download-btn').show();
 	});
 
 });
