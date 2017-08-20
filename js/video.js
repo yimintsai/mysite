@@ -56,6 +56,12 @@ function onYouTubeIframeAPIReady() {
 			'list' : 'PLzmofmCZCSzyMRUcFFSb5jpsltVPlwx72'
 		}
 	});
+	
+	players['player8'] = new YT.Player('player8', {
+		height : '440',
+		width : '720',
+		videoId : 'ovtAvbn4Xcs'		
+	});
 }
 
 // 4. The API will call this function when the video player is ready.

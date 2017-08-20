@@ -214,7 +214,7 @@ $(document).ready(function() {
 
 	$('#gmap').gmap3({
 		marker : {
-			latLng : [25.014397, 121.530668],
+			latLng : [24.772396, 121.023451],
 			options : {
 				icon : new google.maps.MarkerImage("img/location.png", new google.maps.Size(49, 65, "px", "px"))
 			}
